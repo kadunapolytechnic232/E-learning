@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - E-Learn | Kaduna Polytechnic</title>
+    <link rel="stylesheet" href="../assets/css/course-section.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../assets/images/kp-logo.png" alt="Kaduna Polytechnic Logo">
+                E-Learn
+            </div>
+            <ul class="nav-links">
+                <li><a href="../dashboard.html">Dashboard</a></li>
+                <li><a href="course-list.html" class="active">Courses</a></li>
+                <li><a href="../login.html">Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="courses-section">
+        <h1>Available Courses</h1>
+        <div class="course-list" id="coursesContainer">
+            <!-- Courses will be dynamically generated -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Department of Computer Science, Kaduna Polytechnic. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../assets/js/course-list.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Users - Admin | Kaduna Polytechnic</title>
+  <link rel="stylesheet" href="../assets/css/manage-users.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Admin Panel</div>
+      <ul class="nav-links">
+        <li><a href="manage-users.html" class="active">Manage Users</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="../login.html">Logout</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="admin-section">
+    <h1>Manage Users</h1>
+    <div class="user-form">
+      <input type="text" id="username" placeholder="Student Name">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="password" placeholder="Password">
+
+      <select id="role">
+        <option value="Student">Student</option>
+      </select>
+
+      <button class="btn-add addUser">Add User</button>
+    </div>
+
+    <div class="user-list">
+      <table id="userTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Student Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Password</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="userList">
+          <!-- Users will be rendered here -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script type="module"  src="../assets/js/manage-users.js"></script>
+</body>
+</html>

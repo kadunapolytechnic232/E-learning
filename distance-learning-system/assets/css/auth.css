@@ -1,0 +1,94 @@
+/* ==============================
+   Auth Section
+============================== */
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 4rem 2rem;
+  background: #f5f5f5;
+}
+
+.auth-container {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.auth-logo {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.auth-container h2 {
+  margin-bottom: 1.5rem;
+  color: #00A651;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.auth-container input:focus {
+  border-color: #00A651;
+  outline: none;
+}
+
+.auth-container .btn {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 50px;
+  background: #00A651;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-container .btn:hover {
+  background: #007d3d;
+}
+
+
+
+
+
+
+
+/* Style only the selector */
+select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  cursor: pointer;
+}
+
+/* Focus effect */
+select:focus {
+  border-color: #28a745; /* green for app */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+  outline: none;
+}

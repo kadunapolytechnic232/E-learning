@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports - Admin | Kaduna Polytechnic</title>
+  <link rel="stylesheet" href="../assets/css/reports.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Admin Panel</div>
+      <ul class="nav-links">
+        <li><a href="manage-users.html">Manage Users</a></li>
+        <li><a href="reports.html" class="active">Reports</a></li>
+        <li><a href="../login.html">Logout</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Reports Section -->
+  <section class="admin-section">
+    <h1>Student Progress Reports</h1>
+
+    <!-- Student Selector -->
+    <div class="student-selector">
+      <label for="studentSelect">Select a Student:</label>
+      <select id="studentSelect"></select>
+    </div>
+
+    <!-- Report Display -->
+    <div id="reportList"></div>
+  </section>
+
+  <script  type="module"  type="module"  src="../assets/js/reports.js"></script>
+</body>
+</html>

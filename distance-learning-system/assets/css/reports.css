@@ -1,0 +1,138 @@
+/* ==============================
+   Report Page Styles (Green Theme)
+============================== */
+.admin-section {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.admin-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #14532d; /* Dark green */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Student Selector */
+.student-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.student-selector label {
+  font-weight: 600;
+  color: #14532d;
+}
+
+.student-selector select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+}
+
+.student-selector select:hover {
+  border-color: #22c55e; /* Green border on hover */
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
+}
+
+#reportList{
+  overflow: scroll;
+}
+/* Report Table */
+#reportList h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #15803d; /* Medium green */
+}
+
+#reportList table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+#reportList th, 
+#reportList td {
+  padding: 18px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#reportList th {
+  background: linear-gradient(135deg, #22c55e, #16a34a); /* Green gradient */
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#reportList tr:nth-child(even) {
+  background-color: #f0fdf4; /* Light green background */
+}
+
+#reportList tr:hover {
+  background-color: #dcfce7; /* Soft green on hover */
+  transition: 0.3s;
+}
+
+#reportList td {
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #reportList table {
+    font-size: 0.9rem;
+  }
+  .student-selector {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+
+
+
+
+
+
+/* Style only the selector */
+select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  cursor: pointer;
+}
+
+/* Focus effect */
+select:focus {
+  border-color: #28a745; /* green for app */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+  outline: none;
+}

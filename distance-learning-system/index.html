@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learn - Dept of Computer Science, Kaduna Polytechnic</title>
+    <link rel="stylesheet" href="assets/css/sstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/kp-logo.png" alt="Kaduna Polytechnic Logo">
+                E-Learn
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="courses/course-list.html">Courses</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+    <div class="hero-text">
+        <h1>Department of Computer Science E-Learning Portal</h1>
+        <p>Interactive online learning designed for Kaduna Polytechnic students and staff.</p>
+        <a href="register.html" class="btn">Get Started</a>
+    </div>
+    <div class="hero-slideshow">
+        <div class="slide active" style="background-image: url('assets/images/elearning1.png');"></div>
+        <div class="slide" style="background-image: url('assets/images/elearning2.png');"></div>
+        <div class="slide" style="background-image: url('assets/images/elearning3.png');"></div>
+        <div class="slide" style="background-image: url('assets/images/elearning4.png');"></div>
+    </div>
+</section>
+
+    <section class="features">
+        <div class="feature-card">
+            <img src="assets/images/courses.png" alt="Courses Icon">
+            <h3>Department Courses</h3>
+            <p>Access all Computer Science department courses online with ease.</p>
+        </div>
+        <div class="feature-card">
+            <img src="assets/images/accessible.png" alt="Accessible Icon">
+            <h3>Accessible Anywhere</h3>
+            <p>Learn from any device, desktop or mobile, anytime, anywhere.</p>
+        </div>
+        <div class="feature-card">
+            <img src="assets/images/progress.png" alt="Progress Icon">
+            <h3>Track Progress</h3>
+            <p>Monitor your learning journey with progress tracking and analytics.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Start Your Learning Journey Today</h2>
+        <a href="register.html" class="btn btn-primary">Sign Up Now</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Department of Computer Science, Kaduna Polytechnic. All Rights Reserved.</p>
+    </footer>
+
+    
+    <script>
+  // ===============================
+  // Auto Slideshow Script
+  // ===============================
+  document.addEventListener("DOMContentLoaded", () => {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".hero-slideshow .slide");
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    // Initial show
+    showSlide(currentSlide);
+
+    // Auto-change every 4 seconds
+    setInterval(nextSlide, 4000);
+  });
+
+
+
+
+    // Hamburger toggle
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+    });
+
+
+</script>
+
+</body>
+</html>
