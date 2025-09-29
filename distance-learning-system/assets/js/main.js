@@ -107,8 +107,8 @@ if (loginForm) {
 
       // Match by username OR name OR email, accept role case-insensitively
       const student = studentsData.find(s =>
-        (s.username === usernameInput || s.name === usernameInput || s.email === usernameInput) &&
-        s.password === password &&
+        (`${s.username}`.toLowerCase() === usernameInput.toLowerCase() || `${s.name}`.toLowerCase() === usernameInput.toLowerCase() || `${s.email}`.toLowerCase() === usernameInput.toLowerCase()) &&
+        `${s.password}`.toLowerCase() === password.toLowerCase() &&
         String(s.role).toLowerCase() === "student"
       );
 
@@ -136,7 +136,7 @@ if (loginForm) {
           message.textContent = "Login successful! Redirecting...";
         }
 
-        setTimeout(() => { window.location.href = "../admin/manage-users.html"; }, 700);
+        setTimeout(() => { window.location.href = "https://kadunapolytechnic232.github.io/E-learning/distance-learning-system/admin/manage-users.html"; }, 700);
 
       } else {
         if (message) {
